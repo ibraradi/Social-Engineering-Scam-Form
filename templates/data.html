@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table, th, td {
+ 			 border: 1px solid black;
+ 			 width: 100%;
+			}
+			th {
+				width: 50%;
+			}
+			td {
+				width: 50%;
+			}
+h1{
+	text-align: center;
+}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stolen Data</title>
+</head>
+<body>
+	<h1>Number OF Students: {{number}}</h1>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Password</th>
+  </tr>
+
+
+  {% for student in data %}
+
+  	  <tr>
+    <th>{{student.stid}}</th>
+    <th>{{student.password}}</th>
+  	</tr>
+
+
+  {% endfor %}
+</table>
+</body>
+</html>

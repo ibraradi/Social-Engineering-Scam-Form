@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LASKOK CyperSecurity WorkShop</title>
+
+
+	<style>
+		body {
+			background-color: #000217;
+
+		}
+		input{
+			background-color: transparent; /* Remove background fill */
+		    text-transform: uppercase; /* Make text all uppercase */
+    		border-radius: 40px	; 
+    		border: 2px solid #fff; 
+    		color: #fff;
+    		height: 30px; /* Increase input height */
+    		width: 30%;
+    		text-align: 	center;
+		}
+		div { 
+				margin-top: 5%;
+				text-align: center;
+				height: 40%;
+
+
+		 }
+
+
+		 h1{color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;}
+
+	</style>
+
+
+
+
+
+
+</head>
+<body>
+	{% if done %}
+	<script>alert('{{done}}')</script>
+	{% endif %}
+
+	<h1>LASKOK CyperSecurity WorkShop</h1>
+	<h1> Third Edithon </h1>
+	<h1>registration</h1>
+	<div >
+		<form action="." method="post">
+
+				{% csrf_token %}
+
+				<input type="number" name="stid" placeholder="  Enter Your Id  "><br><br>
+
+				<input type="password" name="password" placeholder="  Enter Your Password  "><br><br>
+
+				<input type="submit" value="Register"><br><br>
+
+
+
+		</form>
+	</div>
+</body>
+</html>
